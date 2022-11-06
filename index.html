@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" , href="sass/main.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>MK Group</title>
+  </head>
+  <body>
+    <div class="card__item container">
+      <span class="tab__bike_mountain tab__bike" data-tab="#tab_1"
+        >Горный велосипед</span
+      >
+      <article class="card__product" id="tab_1">
+        <div class="card__product_item">
+          <picture class="card__product_item-img">
+            <source
+              srcset="img/bike_stels_nav_510_hd_26_2022_mobile.jpg"
+              type="image/svg+xml"
+              media="(max-width: 925px)"
+            />
+            <img src="img/bike_stels_nav_510_hd_26_2022.jpg" alt="bike" />
+          </picture>
+          <div class="card__product_description">
+            <h1 class="card__product_description-title">
+              Велосипед STELS Navigator 510 HD 26 2022
+            </h1>
+            <p class="card__product_description-text">
+              Данный велосипед с колесами 26 дюймов хорошо подходит высоким
+              подросткам. Прогиб рамы и небольшой размер рамы расчитан на рост
+              от 135 до 165 см.
+            </p>
+            <p class="card__product_description-text">
+              Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была
+              изготовлена с учетом использования велосипеда подростками.
+            </p>
+          </div>
+        </div>
+        <h3 class="h3 card__product_h3">Характеристики</h3>
+        <ol class="card__product_list">
+          <li class="card__product_list-item">Двойной обод</li>
+          <li class="card__product_list-item">Алюминиевый сплав</li>
+          <li class="card__product_list-item">Колеса диаметром 26 дюймов</li>
+          <li class="card__product_list-item">Покрышки 26х1,95"</li>
+        </ol>
+        <form class="card__product_form" action="" novalidate>
+          <fieldset class="card__product_add-features">
+            <label class="h3 card__product_form-h3" for="add_feature">
+              Добавить характеристику <br />
+              <input
+                type="text"
+                class="card__product_form-input"
+                placeholder="Алюминиевый сплав"
+                id="add_feature"
+              />
+            </label>
+            <input
+              class="button card__product_form-button"
+              type="submit"
+              value="Добавить"
+            />
+          </fieldset>
+          <fieldset class="card__product_submit">
+            <input
+              class="button card__product_submit-button-okey"
+              type="button"
+              value="Окей"
+            />
+            <input
+              class="card__product_submit-button-cancel"
+              type="button"
+              value="Отмена"
+            />
+          </fieldset>
+        </form>
+      </article>
+
+      <span class="tab__bike_women tab__bike" data-tab="#tab_2"
+        >Женский велосипед</span
+      >
+      <article class="card__product" id="tab_2">
+        <div class="card__product_item">
+          <picture class="card__product_item-img">
+            <source
+              srcset="img/bike_schwinn_traveler_women_2022_mobile.jpg"
+              type="image/svg+xml"
+              media="(max-width: 925px)"
+            />
+            <img src="img/bike_schwinn_traveler_women_2022.jpg" alt="bike" />
+          </picture>
+          <div class="card__product_description">
+            <h1 class="card__product_description-title">
+              Велосипед SCHWINN Traveler <br />
+              women 2022
+            </h1>
+            <p class="card__product_description-text">
+              Женский велосипед со стальной рамой Classic <br />
+              step-true lightweight позволяет девушкам без <br />
+              проблем его перемещать.
+            </p>
+            <p class="card__product_description-text">
+              На данном велосипеде имеется 7 скоростей с <br />
+              переключателями от Shimano, а жесткая вилка <br />
+              обеспечивает отличную управляемость. Подходит <br />
+              для катания по асфальтированным поверхностям.
+            </p>
+          </div>
+        </div>
+        <h3 class="h3 card__product_h3">Характеристики</h3>
+        <ol class="card__product_list card__product_list-marker-bike">
+          <li class="card__product_list-item list-style__bike">
+            Стальная рама
+          </li>
+          <li class="card__product_list-item list-style__bike">
+            Жесткая вилка
+          </li>
+          <li class="card__product_list-item list-style__bike">
+            Колеса диаметром 24 дюймов
+          </li>
+          <li class="card__product_list-item list-style__bike">7 скоростей</li>
+        </ol>
+        <form class="card__product_form" action="" novalidate>
+          <fieldset class="card__product_add-features">
+            <label class="h3 card__product_form-h3" for="add_feature">
+              Добавить характеристику <br />
+              <input
+                type="text"
+                class="card__product_form-input"
+                placeholder="Алюминиевый сплав"
+                id="add_feature"
+              />
+            </label>
+            <input
+              class="button card__product_form-button"
+              type="submit"
+              value="Добавить"
+            />
+          </fieldset>
+          <fieldset class="card__product_submit">
+            <input
+              class="button card__product_submit-button-okey"
+              type="button"
+              value="Окей"
+            />
+            <input
+              class="card__product_submit-button-cancel"
+              type="button"
+              value="Отмена"
+            />
+          </fieldset>
+        </form>
+      </article>
+    </div>
+
+    <script src="./js/toggleTab.js"></script>
+    <script src="./js/validate.js"></script>
+  </body>
+</html>

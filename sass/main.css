@@ -1,0 +1,414 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../font/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../font/Montserrat-Bold.ttf");
+}
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #494949;
+  background: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 50px 0;
+}
+
+.card__product {
+  max-width: 846px;
+  background: #FFFFFF;
+  border-radius: 0px 20px 20px 20px;
+  margin: 0 30px -900px 30px;
+  position: relative;
+  display: none;
+}
+
+.active__tab {
+  display: block;
+}
+
+.tab__bike_mountain {
+  width: 267px;
+  height: 73px;
+  color: #0C0C0C;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  background: #D9D9D9;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px 0 0 0;
+  margin: 0 0 0 30px;
+}
+
+.tab__bike_mountain.active {
+  color: #3922C5;
+  background: #FFFFFF;
+}
+
+.tab__bike_women {
+  width: 288px;
+  height: 73px;
+  color: #0C0C0C;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  background: #D9D9D9;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px 0 0 0;
+  margin: 0 0 0 297px;
+}
+
+.tab__bike_women.active {
+  color: #3922C5;
+  background: #FFFFFF;
+  margin: -73px 0 0 297px;
+}
+
+.card__product_item {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 40px 0;
+  padding: 0 0 40px 0;
+  position: relative;
+}
+
+.card__product_item::after {
+  content: "";
+  width: 726px;
+  height: 1px;
+  background: #D9D9D9;
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+}
+
+.card__product_description {
+  margin: 0 60px 0 0;
+}
+
+.card__product_description-title {
+  width: 425px;
+}
+
+.card__product_description-text {
+  width: 425px;
+  margin: 20px 0 0 0;
+}
+
+.h3 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0C0C0C;
+}
+
+.card__product_h3 {
+  margin: 0 0 20px 60px;
+  padding: 0 0 0 0;
+}
+
+.card__product_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 82px;
+  padding: 0 0 0 20px;
+  margin: 0 0 0 60px;
+}
+
+.card__product_list-item {
+  padding: 0 0 0 10px;
+  margin: 0 0 16px 0;
+}
+
+.card__product_form {
+  margin: 0 0 40px 60px;
+}
+
+.card__product_add-features {
+  border: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.card__product_form-input {
+  width: 351px;
+  height: 52px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 16px;
+  margin: 20px 24px 0 0;
+  padding: 14px 16px 14px 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0C0C0C;
+}
+
+.card__product_form-input:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+  color: #0C0C0C;
+  border-color: #3922C5;
+}
+
+.card__product_form-input.error {
+  border-color: red;
+}
+
+.button {
+  background: #3922C5;
+  border-radius: 16px;
+  border-color: #3922C5;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #2C1A9A;
+  transition: all 0.5s ease 0s;
+}
+
+.button:active {
+  background: #1F1368;
+  transition: all 0.5s ease 0s;
+}
+
+.card__product_form-button {
+  width: 128px;
+  height: 52px;
+}
+
+.card__product_submit {
+  border: none;
+  padding: 30px 36px;
+  width: 726px;
+  height: 112px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(12, 12, 12, 0.1);
+  border-radius: 20px;
+}
+
+.card__product_submit-button-okey {
+  width: 92px;
+  height: 52px;
+}
+
+.card__product_submit-button-cancel {
+  border: none;
+  background-color: #fff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0C0C0C;
+  margin: 0 0 0 34px;
+  cursor: pointer;
+}
+
+.card__product_submit-button-cancel:hover {
+  color: #2C1A9A;
+  transition: all 0.5s ease 0s;
+}
+
+.card__product_submit-button-cancel:active {
+  color: #1F1368;
+  transition: all 0.5s ease 0s;
+}
+
+.list-style__bike {
+  list-style-image: url(../img/icon_bike_blue.svg);
+  padding: 0 0 0 16px;
+}
+
+.card__product_list-marker-bike {
+  padding: 0 0 0 28px;
+}
+
+@media (max-width: 925px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .h3 {
+    font-size: 16px;
+  }
+  .card__item {
+    margin: 0 0 30px 0;
+  }
+  .card__product_description-title {
+    max-width: 295px;
+  }
+  .card__product_description-text {
+    max-width: 295px;
+    height: auto;
+    margin: 15px 0 0 0;
+  }
+  .tab__bike_mountain {
+    width: 335px;
+    text-align: start;
+    font-size: 20px;
+    padding: 20px 0 0 20px;
+    background-color: #FFFFFF;
+    margin: 20px 0 0 10px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .tab__bike_mountain.active {
+    border-radius: 20px 20px 0 0;
+  }
+  .tab__bike_mountain::after {
+    content: url("../img/arrow_up.svg");
+    padding-left: 77px;
+  }
+  .tab__bike_mountain.active::after {
+    content: url("../img/arrow_down.svg");
+    padding-right: 25px;
+  }
+  .tab__bike_women {
+    width: 335px;
+    text-align: start;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 20px;
+    background-color: #FFFFFF;
+    margin: 20px 0 0 10px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .tab__bike_women.active {
+    border-radius: 20px 20px 0 0;
+    margin: 20px 0 0 10px;
+  }
+  .tab__bike_women::after {
+    content: url("../img/arrow_up.svg");
+    padding-right: 25px;
+  }
+  .tab__bike_women.active::after {
+    content: url("../img/arrow_down.svg");
+    padding-right: 25px;
+  }
+  .card__product_item {
+    flex-wrap: wrap;
+    margin: 30px 20px 30px 20px;
+    padding: 0 0 30px 0;
+  }
+  .card__product_item::after {
+    max-width: 295px;
+    right: 0;
+  }
+  .card__product_list {
+    height: auto;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 20px;
+  }
+  .card__product_h3 {
+    margin: 0 0 15px 20px;
+    padding: 0 0 0 0;
+  }
+  .card__product {
+    display: none;
+    max-width: 335px;
+    border-radius: 0px 0 20px 20px;
+    margin: 0 10px 10px 10px;
+  }
+  .card__product.active__tab {
+    display: block;
+  }
+  .card__product_submit {
+    max-width: 295px;
+    padding: 30px 20px;
+  }
+  .card__product_form {
+    margin: 0 0 30px 20px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .card__product_submit-button-okey {
+    width: 120px;
+  }
+  .card__product_form-input {
+    max-width: 295px;
+    margin: 15px 0 15px 0;
+    padding: 15px 16px 15px 16px;
+    font-size: 14px;
+  }
+  .card__product_form-button {
+    width: 295px;
+  }
+  .card__product_add-features {
+    margin: 30px 0 30px 0;
+  }
+}/*# sourceMappingURL=main.css.map */
